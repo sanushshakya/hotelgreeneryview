@@ -5,6 +5,7 @@ import { Carousel } from 'react-responsive-carousel';
 import axios from 'axios';
 import Room from '../../components/Room/Room';
 import Testimonials from '../../components/Testimonials/Testimonials';
+import config from '../../config';
 
 const About = () => {
     const [banners, setBanner] = useState([]);
@@ -14,11 +15,11 @@ const About = () => {
     useEffect(() => {
         const fetchData = async () => {
           try{
-            const resBan = await axios.get(`http://localhost:8000/gallery/Gallery/`);
+            const resBan = await axios.get(`${config.apiBaseUrl}/gallery/Gallery/`);
             setBanner(resBan.data)
-            const resRoom = await axios.get(`http://localhost:8000/room/Room/`);
+            const resRoom = await axios.get(`${config.apiBaseUrl}/room/Room/`);
             setRoom(resRoom.data)
-            const resTest = await axios.get(`http://localhost:8000/testimonial/Testimonial/`);
+            const resTest = await axios.get(`${config.apiBaseUrl}/testimonial/Testimonial/`);
             setTestimonials(resTest.data)
           } catch (error){
             console.error(error);

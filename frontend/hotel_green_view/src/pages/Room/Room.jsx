@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import "./Room.scss"
 import axios from 'axios';
 import { useLocation } from 'react-router-dom';
+import config from '../../config';
 
 const Room = () => {
     const location = useLocation();
@@ -21,7 +22,7 @@ const Room = () => {
     const handleReservation = async(e) => {
         e.preventDefault();
         try {
-            const resReservation = await axios.post('http://localhost:8000/reservation/Reservation/', reservationData);
+            const resReservation = await axios.post(`${config.apiBaseUrl}/reservation/Reservation/`, reservationData);
             window.location.href = '/'
         } catch (error) {
             console.error(error.response?.data || error);

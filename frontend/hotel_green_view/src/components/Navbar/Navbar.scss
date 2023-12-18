@@ -1,0 +1,35 @@
+.navbar{
+    margin: 0px 100px;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        .left{
+            .logo{
+                img{
+                    height: 180px;
+                }
+            }
+        }
+        .right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            color: #28a745;
+            button{
+                background-color: #90EE90;
+                border: none;
+                border-radius: 15px;
+                padding: 10px 30px;
+                font-weight: 500;
+                font-size: 18px;
+                color: #000;
+                cursor: pointer;
+            }
+            button:hover{
+                background-color: #000;
+                color: aliceblue;
+            }
+        }
+    }
+}

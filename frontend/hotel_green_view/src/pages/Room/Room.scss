@@ -1,0 +1,93 @@
+.room{
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        .top{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            img{
+                width: auto;
+                height: 600px;
+            }
+        }
+        .bottom{
+            margin: 50px 100px;
+            display: flex;
+            justify-content: space-between;
+            gap: 100px;
+            .left{
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                h1{
+                    font-size: 3rem;
+                    font-weight: 700;
+                    color: #28a745;
+                }
+                p{
+                    font-size: 2.5rem;
+                    font-weight: 500;
+                }
+                form{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 50px;
+                    span{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                        label{
+                            font-size: 1.5rem;
+                            font-weight: 500;
+                        }
+                        input{
+                            border: 1px solid #28a745;
+                            padding: 10px 15px;
+                            border-radius: 15px;
+                            font-size: 2rem;
+                        }
+                        select{
+                            border: 1px solid #28a745;
+                            padding: 10px 15px;
+                            border-radius: 15px;
+                            font-size: 2rem;
+                        }
+                        button {
+                            background-color: #28a745;
+                            border: none;
+                            border-radius: 20px;
+                            width: 50%;
+                            padding: 10px 30px;
+                            font-weight: 300;
+                            font-size: 18px;
+                            color: #fff;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .right{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                img{
+                    width: auto;
+                    height:400px;
+                    border-radius: 50px;
+                }
+                .desc{
+                    font-size: 1.5rem;
+                    font-weight: 300;
+                    text-align: justify;
+                }
+                .price{
+                    font-size: 2rem;
+                    font-weight: 700;
+                    color: #28a745;
+                }
+            }
+        }
+    }
+}

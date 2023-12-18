@@ -1,0 +1,16 @@
+.amenities{
+    margin: 50px 100px;
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        span{
+            text-align: center;
+            color: #28a745;
+            width: 400px;
+            margin-bottom: 50px;
+        }
+    }
+}

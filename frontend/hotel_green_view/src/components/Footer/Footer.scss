@@ -1,0 +1,68 @@
+.footer{
+    margin: 0px 100px;
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        .top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .left{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                .logo{
+                    img{
+                        height: 180px;
+                    }
+                }
+                .social{
+                    display: flex;
+                    gap: 10px;
+                    font-size:xx-large;
+                }
+            }
+            .center{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                .address{
+                    width: 250px;
+                }
+                .detail{
+                    color: #28a745;
+                }
+            }
+            .right{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                width: 30%;
+                .top{
+                    h3{
+                        font-size: 1rem;
+                        font-weight: 300;
+                        color: #28a745;
+                    }
+                }
+                .links{
+                    display: flex;
+                    gap: 20px;
+                    flex-wrap: wrap;
+                    color: #28a745;
+                }
+            }
+        }
+        .bottom{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            span{
+                text-align: center;
+            }
+        }
+    }
+}

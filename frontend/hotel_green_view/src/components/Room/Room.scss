@@ -1,0 +1,70 @@
+.room{
+    margin: 50px 50px 100px 50px;
+    .image{
+        position: absolute;
+        border-radius: 25px;
+        object-fit: cover;
+        overflow: hidden;
+        img{
+            width: 600px;
+            height: 400px;
+        }
+    }
+    .image::before {
+        content: "";
+        position: absolute;
+        width: 600px;
+        height: 400px;
+        background-color: rgba(0, 0, 0, 0.4); /* Black with 0.1 opacity */
+        border: none;
+        border-radius: 20px;
+    }
+    .details{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        text-align: justify;
+        gap: 10px;
+        top: 140px;
+        left: 20px;
+        color: aliceblue;
+        h3{
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        p{
+            font: 1.5rem;
+            font-weight: 500;
+            max-width: 400px;
+            height: 60px;
+            overflow: hidden;
+        }
+        span{
+            p{
+                font-size: 1rem;
+                font-weight: 300;
+                .present{
+                    font-size: 2rem;
+                    font-weight: 500;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+                .old{
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    color:  rgba(218, 218, 218, 0.9);
+                }
+            }
+        }
+        button{
+            background-color: #90EE90;
+            border: none;
+            border-radius: 15px;
+            padding: 10px 30px;
+            font-weight: 700;
+            font-size: 20px;
+            color: aliceblue;
+            cursor: pointer;
+        }
+    }
+}
